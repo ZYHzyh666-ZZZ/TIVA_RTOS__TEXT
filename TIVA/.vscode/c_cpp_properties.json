@@ -1,0 +1,34 @@
+{
+    "configurations": [
+        {
+            "name": "TIVA",
+            "includePath": [
+                "${workspaceFolder}/DriversBsp",
+                "${workspaceFolder}/DriversBsp/MyMath",
+                "${workspaceFolder}/DriversMcu/TM4C123/Drivers",
+                "${workspaceFolder}/DriversMcu/TM4C123/Libraries/inc",
+                "${workspaceFolder}/DriversMcu/TM4C123/Libraries/inc/driver_hw",
+                "${workspaceFolder}/DriversMcu/TM4C123/Libraries/inc/driver_inc",
+                "${workspaceFolder}/DriversMcu/TM4C123/Libraries/inc/driver_usb",
+                "${workspaceFolder}/DriversMcu/TM4C123/Libraries/inc/driver_usb/device",
+                "${workspaceFolder}/FcSrc",
+                "${workspaceFolder}/FcSrc/FcGeneral",
+                "${workspaceFolder}/FcSrc/FcSpecific",
+                "${workspaceFolder}/DriversMcu/TM4C123",
+                "${workspaceFolder}/User",
+                "${workspaceFolder}/FreeRTOS/include",
+                "${workspaceFolder}/DriversMcu/TM4C123/Libraries",
+                "${workspaceFolder}/DriversMcu/TM4C123/Libraries/src",
+                "C:/Keil_v5/ARM/ARMCC/include",
+                "C:/Keil_v5/ARM/ARMCC/include/rw"
+            ],
+            "defines": [
+                "TARGET_IS_TM4C123_RB1",
+                "PART_TM4C123GH6PM",
+                "__CC_ARM"
+            ],
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
