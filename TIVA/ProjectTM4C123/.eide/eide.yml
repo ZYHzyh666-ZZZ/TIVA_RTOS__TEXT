@@ -58,6 +58,7 @@ virtualFolder:
         - path: ../DriversMcu/TM4C123/Drivers/Drv_Usb.h
         - path: ../DriversMcu/TM4C123/Drivers/Drv_Timer.c
         - path: ../DriversMcu/TM4C123/Drivers/Drv_Timer.h
+        - path: ../DriversMcu/TM4C123/FreeRTOSConfig.h
       folders: []
     - name: LibariesMcu
       files:
