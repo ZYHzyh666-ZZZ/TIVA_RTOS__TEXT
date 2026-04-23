@@ -4,6 +4,7 @@
             "name": "Ano_LX",
             "includePath": [
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\DriversBsp",
+                "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\DriversBsp\\MyMath",
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\DriversMcu\\TM4C123\\Drivers",
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\DriversMcu\\TM4C123\\Libraries\\inc",
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\DriversMcu\\TM4C123\\Libraries\\inc\\driver_hw",
@@ -11,6 +12,8 @@
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\DriversMcu\\TM4C123\\Libraries\\inc\\driver_usb",
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\DriversMcu\\TM4C123\\Libraries\\inc\\driver_usb\\device",
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\FcSrc",
+                "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\FcSrc\\FcGeneral",
+                "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\FcSrc\\FcSpecific",
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\DriversMcu\\TM4C123",
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\User",
                 "c:\\Users\\zzyyh\\Desktop\\MY_fly\\4.22__TIVA_RTOS\\TIVA\\FreeRTOS\\include",

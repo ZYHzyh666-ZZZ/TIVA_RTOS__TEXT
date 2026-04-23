@@ -28,7 +28,7 @@
  * @note Definitions which FreeRTOS uses sync to the hardware
  */
 #define configCPU_CLOCK_HZ (SysCtlClockGet())
-#define configTICK_RATE_HZ ((portTickType)100)
+#define configTICK_RATE_HZ ((portTickType)1000)
 #define configUSE_16_BIT_TICKS 0
 
 /* Be ENORMOUSLY careful if you want to modify these two values and make sure

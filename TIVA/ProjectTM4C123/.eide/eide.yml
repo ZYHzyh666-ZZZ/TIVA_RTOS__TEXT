@@ -81,6 +81,8 @@ virtualFolder:
         - path: ../User/STP_23L.h
         - path: ../User/ANO_Uart_V8.c
         - path: ../User/ANO_Uart_V8.h
+        - path: ../User/User_Rtos.c
+        - path: ../User/User_Rtos.h
       folders: []
 dependenceList: []
 outDir: build

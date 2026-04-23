@@ -7,6 +7,9 @@
 **********************************************************************************/
 #include "SysConfig.h"
 #include "Ano_Scheduler.h"
+#include "User_Rtos.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 #ifdef USE_FULL_ASSERT
 void assert_failed(uint8_t *file, uint32_t line)
@@ -23,12 +26,16 @@ int main(void)
 {
 	//进行所有设备的初始化，并将初始化结果保存
 	All_Init();
-	//调度器初始化，系统为裸奔，这里人工做了一个时分调度器
-	Scheduler_Setup();
+
+	// 初始化用户 RTOS 任务/定时器
+	RtosUser_Init();
+
+	// 启动 FreeRTOS 调度器
+	vTaskStartScheduler();
+
 	while (1)
 	{
-		//运行任务调度器，所有系统功能，除了中断服务函数，都在任务调度器内完成
-		Scheduler_Run();
+		// 如果调度器启动成功，这里应永远不会执行
 	}
 }
 /******************* (C) COPYRIGHT 2014 ANO TECH *****END OF FILE************/

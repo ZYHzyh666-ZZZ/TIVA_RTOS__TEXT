@@ -679,6 +679,16 @@
               <FileType>5</FileType>
               <FilePath>..\User\ANO_Uart_V8.h</FilePath>
             </File>
+            <File>
+              <FileName>User_Rtos.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\User\User_Rtos.c</FilePath>
+            </File>
+            <File>
+              <FileName>User_Rtos.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\User\User_Rtos.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
