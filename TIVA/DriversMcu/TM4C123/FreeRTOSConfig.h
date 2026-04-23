@@ -21,7 +21,7 @@
 #include <stdlib.h>
 
 // TivaWare system control definitions
-#include "driverlib/sysctl.h"
+#include "sysctl.h"
 
 /**
  * @brief Hardware Specific Definitions

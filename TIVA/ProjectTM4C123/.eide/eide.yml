@@ -77,6 +77,8 @@ virtualFolder:
         - path: ../User/N100.h
         - path: ../User/STP_23L.c
         - path: ../User/STP_23L.h
+        - path: ../User/ANO_Uart_V8.c
+        - path: ../User/ANO_Uart_V8.h
       folders: []
 dependenceList: []
 outDir: build
@@ -105,6 +107,7 @@ targets:
         - .cmsis/include
         - RTE/_Ano_LX
         - ../FreeRTOS/include
+        - ../FreeRTOS/portable
       libList: []
     excludeList: []
     settings:

@@ -1,6 +1,6 @@
 #include "FreeRTOS.h"
 #include "task.h"
-#include "utils/uartstdio.h"
+//#include "utils/uartstdio.h"
 
 // The error routine that is called if the driver library encounters an error.
 #ifdef DEBUG
@@ -12,7 +12,7 @@ void __error__(char* pcFilename, uint32_t ui32Line)
 // This hook is called by FreeRTOS when an stack overflow error is detected.
 extern "C" void vApplicationStackOverflowHook(xTaskHandle* pxTask, char* pcTaskName)
 {
-    UARTprintf("Stack Overflow from task: %s", pcTaskName);
+//    UARTprintf("Stack Overflow from task: %s", pcTaskName);
     // This function can not return, so loop forever.  Interrupts are disabled
     // on entry to this function, so no processor interrupts will interrupt this
     // loop.
