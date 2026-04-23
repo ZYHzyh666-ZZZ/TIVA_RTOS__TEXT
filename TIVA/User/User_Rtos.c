@@ -1,19 +1,17 @@
 #include "User_Rtos.h"
 #include "Drv_Uart.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "timers.h"
-#include "semphr.h"
 
-static TimerHandle_t xTimer5ms = NULL;
-static SemaphoreHandle_t xSem5ms = NULL;
-static TaskHandle_t xPeriphTaskHandle = NULL;
+/* 句柄定义（在头文件中声明为 extern） */
+TimerHandle_t xTimer5ms = NULL;
+SemaphoreHandle_t xSem5ms = NULL;
+TaskHandle_t xPeriphTaskHandle = NULL;
 
 static void Timer5msCallback(TimerHandle_t xTimer)
 {
     (void)xTimer;
     if (xSem5ms != NULL)
     {
+        /* 软件定时器回调在定时器守护任务中执行，可使用 xSemaphoreGive */
         xSemaphoreGive(xSem5ms);
     }
 }
@@ -21,7 +19,7 @@ static void Timer5msCallback(TimerHandle_t xTimer)
 static void PeripheralTask(void *pvParameters)
 {
     (void)pvParameters;
-    for(;;)
+    for (;;)
     {
         if (xSemaphoreTake(xSem5ms, portMAX_DELAY) == pdTRUE)
         {
@@ -33,13 +31,14 @@ static void PeripheralTask(void *pvParameters)
 void RtosUser_Init(void)
 {
     xSem5ms = xSemaphoreCreateBinary();
-    if (xSem5ms == NULL) return;
+    if (xSem5ms == NULL)
+        return;
 
-    xTimer5ms = xTimerCreate("T5ms", pdMS_TO_TICKS(5), pdTRUE, NULL, Timer5msCallback);
+    xTimer5ms = xTimerCreate(USER_5MS_TIMER_NAME, pdMS_TO_TICKS(USER_5MS_TIMER_PERIOD_MS), pdTRUE, NULL, Timer5msCallback);
     if (xTimer5ms != NULL)
     {
         xTimerStart(xTimer5ms, 0);
     }
 
-    xTaskCreate(PeripheralTask, "Periph5ms", configMINIMAL_STACK_SIZE + 200, NULL, tskIDLE_PRIORITY + 1, &xPeriphTaskHandle);
+    xTaskCreate(PeripheralTask, USER_PERIPH_TASK_NAME, USER_PERIPH_TASK_STACK, NULL, USER_PERIPH_TASK_PRIORITY, &xPeriphTaskHandle);
 }
