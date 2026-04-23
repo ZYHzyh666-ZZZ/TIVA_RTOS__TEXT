@@ -27,6 +27,7 @@ virtualFolder:
         - path: ../FcSrc/LX_FC_Fun.h
         - path: ../FcSrc/LX_FC_State.c
         - path: ../FcSrc/LX_FC_State.h
+        - path: ../FcSrc/FreeRTOSConfig.cpp
       folders: []
     - name: DriversBsp
       files:
