@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>TARGET_IS_TM4C123_RB1 PART_TM4C123GH6PM</Define>
               <Undefine></Undefine>
-              <IncludePath>..\DriversBsp;..\DriversBsp\MyMath;..\DriversMcu\TM4C123\Drivers;..\DriversMcu\TM4C123\Libraries\inc;..\DriversMcu\TM4C123\Libraries\inc\driver_hw;..\DriversMcu\TM4C123\Libraries\inc\driver_inc;..\DriversMcu\TM4C123\Libraries\inc\driver_usb;..\DriversMcu\TM4C123\Libraries\inc\driver_usb\device;..\FcSrc;..\FcSrc\FcGeneral;..\FcSrc\FcSpecific;..\DriversMcu\TM4C123;..\User</IncludePath>
+              <IncludePath>..\DriversBsp;..\DriversBsp\MyMath;..\DriversMcu\TM4C123\Drivers;..\DriversMcu\TM4C123\Libraries\inc;..\DriversMcu\TM4C123\Libraries\inc\driver_hw;..\DriversMcu\TM4C123\Libraries\inc\driver_inc;..\DriversMcu\TM4C123\Libraries\inc\driver_usb;..\DriversMcu\TM4C123\Libraries\inc\driver_usb\device;..\FcSrc;..\FcSrc\FcGeneral;..\FcSrc\FcSpecific;..\DriversMcu\TM4C123;..\User;..\FreeRTOS\include</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
