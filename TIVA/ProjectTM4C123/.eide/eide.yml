@@ -3,7 +3,8 @@ name: ANO_LX_TM4C123
 type: ARM
 deviceName: null
 packDir: null
-srcDirs: []
+srcDirs:
+  - ../FreeRTOS
 virtualFolder:
   name: <virtual_root>
   files: []
@@ -102,8 +103,11 @@ targets:
         - ../User
         - .cmsis/include
         - RTE/_Ano_LX
+        - ../FreeRTOS/include
       libList: []
     excludeList: []
+    settings:
+      debugger: cortex-debug
     toolchain: AC5
     toolchainConfigMap:
       AC5:
